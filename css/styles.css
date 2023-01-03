@@ -163,6 +163,57 @@ body {
   color: #fff;
   font-size: 60px;
 }
+/* // information */
+.container_information_event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../images/Background_information.png");
+  background-size: cover;
+}
+.item_title_information_event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.title_information_normal {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.title_information_color {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  background: linear-gradient(180deg, #2eff43 0%, #19ff9a 48.44%, #19fef0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.decription_information_event {
+  width: 60%;
+  margin-top: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
 
 /* container_image */
 .container_image {
@@ -263,6 +314,68 @@ body {
   width: 100%;
   background: linear-gradient(180deg, #2eff43 0%, #19ff9a 48.44%, #19fef0 100%);
 }
+/* // Agenda */
+.container_agenda {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  background-image: url("../images/backgroundAgenda.png");
+  background-size: cover;
+}
+.title_agenda {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 140%;
+  text-align: center;
+  background: -webkit-linear-gradient(180deg, #2eff43, #19ff9a, #19fef0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.list_time_agenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+}
+.item_time_agenda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+}
+.time_agenda {
+  width: 30%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: right;
+  color: #ffffff;
+}
+.decription_agenda {
+  width: 70%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Video */
 .container_video {
   display: flex !important;
   flex-direction: column;
@@ -346,6 +459,41 @@ body {
     width: 25%;
     padding: 25px;
   }
+  .list_time_agenda {
+    width: 95%;
+  }
+  .item_time_agenda {
+    gap: 40px;
+  }
+  .time_agenda {
+    font-size: 35px;
+  }
+  .decription_agenda {
+    font-size: 35px;
+    line-height: 60px;
+  }
+  /* // */
+  .item_title_information_event {
+    gap: 10px;
+    width: 100%;
+  }
+  .title_information_normal {
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 130%;
+  }
+  .title_information_color {
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 130%;
+  }
+  .decription_information_event {
+    width: 90%;
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 160%;
+    text-align: justify;
+  }
 }
 
 /* // Medium */
@@ -390,6 +538,40 @@ body {
     width: 30%;
     padding: 25px;
   }
+  .list_time_agenda {
+    width: 95%;
+  }
+  .item_time_agenda {
+    gap: 40px;
+  }
+  .time_agenda {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .decription_agenda {
+    font-size: 30px;
+  }
+  .item_title_information_event {
+    gap: 10px;
+    width: 100%;
+  }
+  .title_information_normal {
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 130%;
+  }
+  .title_information_color {
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 130%;
+  }
+  .decription_information_event {
+    width: 90%;
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 160%;
+    text-align: justify;
+  }
 }
 
 /* //Mobile */
@@ -432,5 +614,91 @@ body {
   }
   .navbar {
     display: none;
+  }
+  .list_time_agenda {
+    width: 100%;
+    padding: 3px;
+  }
+  .item_time_agenda {
+    gap: 15px;
+  }
+  .time_agenda {
+    width: 40%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .decription_agenda {
+    width: 60%;
+    font-size: 16px;
+  }
+  .title_agenda {
+    font-size: 30px;
+  }
+  .item_title_information_event {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .title_information_normal {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    color: #ffffff;
+  }
+  .title_information_color {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      #2eff43 0%,
+      #19ff9a 48.44%,
+      #19fef0 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .decription_information_event {
+    width: 60%;
+    margin-top: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+  }
+  /* // */
+  .item_title_information_event {
+    gap: 10px;
+    width: 100%;
+  }
+  .title_information_normal {
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 130%;
+  }
+  .title_information_color {
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 130%;
+  }
+  .decription_information_event {
+    width: 90%;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: justify;
   }
 }
