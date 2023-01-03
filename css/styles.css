@@ -14,6 +14,38 @@ body {
   background-image: url("../images/background.png");
   background-size: cover;
 }
+/* Navbar */
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  font-size: 20px;
+  background-color: #020607;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.navbar:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav li a:link,
+.nav li a:visited {
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  /* font-size: 17px; */
+  background-color: transparent;
+}
+.space_logo_fsoft {
+  width: 14%;
+  height: auto;
+  padding: 20px;
+}
+.logo_fsoft {
+  width: 100%;
+  height: 100%;
+}
+/* Layout */
 .layout_container_01 {
   display: grid;
   height: 90%;
@@ -33,7 +65,7 @@ body {
 }
 .space_music01 {
   position: absolute;
-  top: 0;
+  top: 60px;
   right: 0;
   width: 22%;
 }
@@ -55,14 +87,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.space_logo_fsoft {
-  width: 45%;
-  margin-bottom: 45px;
-}
-.logo_fsoft {
-  height: 100%;
-  width: 100%;
 }
 .text_time_event {
   color: #32ff30;
@@ -192,7 +216,7 @@ body {
   width: 90%;
   gap: 20px;
   grid-template-columns: auto auto auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .item_artist {
   position: relative;
@@ -316,6 +340,10 @@ body {
   .space_artist_lineup {
     grid-template-columns: auto;
   }
+  .space_logo_fsoft {
+    width: 25%;
+    padding: 25px;
+  }
 }
 
 /* // Medium */
@@ -356,6 +384,10 @@ body {
   .space_artist_lineup {
     grid-template-columns: auto;
   }
+  .space_logo_fsoft {
+    width: 30%;
+    padding: 25px;
+  }
 }
 
 /* //Mobile */
@@ -395,5 +427,8 @@ body {
   }
   .space_artist_lineup {
     grid-template-columns: auto;
+  }
+  .navbar {
+    display: none;
   }
 }
