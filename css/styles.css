@@ -89,12 +89,14 @@ body {
   align-items: center;
 }
 .text_time_event {
+  font-family: "Montserrat";
   color: #32ff30;
   font-weight: bolder;
   font-size: 70px;
   letter-spacing: 8px;
 }
 .text_location_event {
+  font-family: "Montserrat";
   margin-top: 8px;
   color: #fff;
   font-weight: light;
